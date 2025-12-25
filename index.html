@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Author -->
+    <meta name="author" content="Zidan Boukhriss">
+    
+    <!-- Description for SEO -->
+    <meta name="description" content="Explore the legacy of Vegeta, the Saiyan Prince, with stats, techniques, and epic battles.">
+    
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:title" content="VEGETA | The Saiyan Prince">
+    <meta property="og:description" content="Explore the legacy of Vegeta, the Saiyan Prince, with stats, techniques, and epic battles.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/AVATAR.jpf">
+    <meta property="og:url" content="https://zidan-boukhriss.kesug.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VEGETA | The Saiyan Prince">
+    <meta name="twitter:description" content="Explore the legacy of Vegeta, the Saiyan Prince, with stats, techniques, and epic battles.">
+
+    <!-- Page title -->
+    <title>VEGETA | The Saiyan Prince</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700&displ
+
+
+</head>
+
+<body>
+    <!-- Dark Matrix Background Effect -->
+    <div class="matrix-background"></div>
+
+    <!-- Energy Overlay -->
+    <div class="energy-overlay"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">VEGETA</span>
+                    <span class="logo-sub">SAIYAN PRINCE</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">BIOGRAPHY</a></li>
+                    <li class="nav-item"><a href="#power" class="nav-link">POWER LEVELS</a></li>
+                    <li class="nav-item"><a href="#techniques" class="nav-link">TECHNIQUES</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">GALLERY</a></li>
+                    <li class="nav-item"><a href="#legacy" class="nav-link">LEGACY</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn combat-mode" id="combatMode">
+                    <i class="fas fa-crosshairs"></i>
+                    <span>COMBAT MODE</span>
+                </button>
+                <button class="action-btn sound-toggle" id="soundToggle">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay">
+                <div class="scan-line"></div>
+                <div class="grid-overlay"></div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-title-container">
+                        <h1 class="hero-main-title">THE <span class="title-highlight">PRINCE</span> OF ALL SAIYANS</h1>
+                        <h2 class="hero-subtitle">PERFECTION OF WARRIOR EVOLUTION</h2>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="999999">0</div>
+                                <div class="stat-label">POWER LEVEL</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">ULTRA</div>
+                                <div class="stat-label">MAXIMUM FORM</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="100">0</div>
+                                <div class="stat-label">BATTLE IQ</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta">
+                            <button class="cta-btn primary" id="explorePower">
+                                <span>EXPLORE POWER</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                            <button class="cta-btn secondary" id="viewBattles">
+                                <i class="fas fa-play"></i>
+                                <span>BATTLE FOOTAGE</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="character-silhouette">
+                            <div class="silhouette-inner"></div>
+                            <div class="energy-core">
+
+                            </div>
+                            <div class="energy-trail"></div>
+                            <div class="energy-trail"></div>
+                            <div class="energy-trail"></div>
+                        </div>
+
+                        <div class="power-meter">
+                            <div class="meter-label">POWER OUTPUT</div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" id="powerMeter"></div>
+                            </div>
+                            <div class="meter-value">
+                                <span id="powerValue">0</span>%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator" style="display: none;">
+                    <div class="scroll-line">
+                        <div class="scroll-dot"></div>
+                    </div>
+                    <span>SCROLL TO PROCEED</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">01</span> BIOGRAPHY</h2>
+                    <p class="section-subtitle">FROM PRINCE TO LEGEND</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <div class="frame-border"></div>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="about-quote">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            <p class="quote-text">"I fight for the sheer pleasure of it. To test my limits. To surpass
+                                them."</p>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3 class="about-title">THE WARRIOR'S PATH</h3>
+                        <p class="about-description">
+                            Vegeta, Prince of the fallen Saiyan race, is a warrior whose pride knows no bounds.
+                            His journey from conqueror to protector represents the ultimate evolution of combat
+                            philosophy.
+                        </p>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">AGE 732</div>
+                                <div class="timeline-content">
+                                    <h4>BIRTH OF A PRINCE</h4>
+                                    <p>Born with a power level of 10,000, immediately establishing his superiority.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">AGE 762</div>
+                                <div class="timeline-content">
+                                    <h4>EARTH CONQUEST</h4>
+                                    <p>Arrived on Earth seeking the Dragon Balls, clashed with Kakarot in legendary
+                                        battle.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">AGE 767</div>
+                                <div class="timeline-content">
+                                    <h4>SACRIFICE</h4>
+                                    <p>Self-destructed against Majin Buu, demonstrating unprecedented character growth.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">PRESENT</div>
+                                <div class="timeline-content">
+                                    <h4>ULTRA EVOLUTION</h4>
+                                    <p>Achieved Ultra Ego, transcending godly power through pure instinct.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Power Levels Section -->
+        <section id="power" class="section power-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">02</span> POWER EVOLUTION</h2>
+                    <p class="section-subtitle">TRANSCENDING LIMITS</p>
+                </div>
+
+                <div class="power-grid">
+                    <div class="power-card">
+                        <div class="power-icon">
+                            <div class="icon-frame">
+                                <img src="./assets/images/BASE_FORM.jpg" alt="BASE_FORM">
+                                <!-- <i class="fas fa-chess-king"></i> -->
+                            </div>
+                        </div>
+                        <h3 class="power-form">BASE FORM</h3>
+                        <div class="power-stats">
+                            <div class="stat-row">
+                                <span>Power Level</span>
+                                <span class="stat-value">18,000</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Battle Prowess</span>
+                                <span class="stat-value">S+</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Technique Mastery</span>
+                                <span class="stat-value">97%</span>
+                            </div>
+                        </div>
+                        <div class="power-desc">
+                            The foundation of all Saiyan power. Raw, unadulterated combat capability.
+                        </div>
+                    </div>
+
+                    <div class="power-card highlighted">
+                        <div class="power-icon">
+                            <div class="icon-frame" style="border-color: #ffd000;">
+                                <img src="./assets/images/SUPER_SAIYAN.jpg" alt="img">
+                                <!-- <i class="fas fa-sun"></i> -->
+                            </div>
+                        </div>
+                        <h3 class="power-form">SUPER SAIYAN</h3>
+                        <div class="power-stats">
+                            <div class="stat-row">
+                                <span>Power Level</span>
+                                <span class="stat-value">900,000</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Battle Prowess</span>
+                                <span class="stat-value">SS</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Technique Mastery</span>
+                                <span class="stat-value">100%</span>
+                            </div>
+                        </div>
+                        <div class="power-desc">
+                            The legendary transformation. 50x power multiplier. Achieved through pure rage.
+                        </div>
+                    </div>
+
+                    <div class="power-card">
+                        <div class="power-icon">
+                            <div class="icon-frame">
+                                <!-- <i class="fas fa-water"></i>-->
+                                <img src="./assets/images/SUPER_BLUE.jpg" alt="">
+                            </div>
+                        </div>
+                        <h3 class="power-form">SUPER SAIYAN BLUE</h3>
+                        <div class="power-stats">
+                            <div class="stat-row">
+                                <span>Power Level</span>
+                                <span class="stat-value">150M</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Battle Prowess</span>
+                                <span class="stat-value">GOD</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Technique Mastery</span>
+                                <span class="stat-value">∞</span>
+                            </div>
+                        </div>
+                        <div class="power-desc">
+                            God ki manifestation. Perfect energy control. Divine power.
+                        </div>
+                    </div>
+
+                    <div class="power-card">
+                        <div class="power-icon">
+                            <div class="icon-frame">
+                                <!-- <i class="fas fa-crown"></i> -->
+                                <img src="./assets/images/ULTRA_EGO.jpg" alt="">
+                            </div>
+                        </div>
+                        <h3 class="power-form">ULTRA EGO</h3>
+                        <div class="power-stats">
+                            <div class="stat-row">
+                                <span>Power Level</span>
+                                <span class="stat-value">UNKNOWN</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Battle Prowess</span>
+                                <span class="stat-value">ULTRA</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Technique Mastery</span>
+                                <span class="stat-value">BEYOND</span>
+                            </div>
+                        </div>
+                        <div class="power-desc">
+                            Transcendent state. Power grows with damage taken. Ultimate warrior form.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="power-comparison">
+                    <h3 class="comparison-title">POWER SCALE COMPARISON</h3>
+                    <div class="comparison-chart">
+                        <div class="chart-bar" data-form="base" data-value="18" style="height: 50px ; background-color: #4e4e4e;">
+                            <div class="bar-label">BASE</div>
+                            <div class="bar-fill" id="base"></div>
+                        </div>
+                        <div class="chart-bar" data-form="ssj" data-value="900" style="height: 120px; background-color: #ffd000;">
+                            <div class="bar-label">SSJ</div>
+                            <div class="bar-fill" id="ssj"></div>
+                        </div>
+                        <div class="chart-bar" data-form="blue" data-value="15000" style="height: 180px; background-color: blue;">
+                            <div class="bar-label">BLUE</div>
+                            <div class="bar-fill" id="blue"></div>
+                        </div>
+                        <div class="chart-bar" data-form="ultra" data-value="99999" style="height: 270px; background-color: rgb(160, 1, 160);">
+                            <div class="bar-label">ULTRA</div>
+                            <div class="bar-fill" id="ego"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Techniques Section -->
+        <section id="techniques" class="section techniques-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">03</span> COMBAT TECHNIQUES</h2>
+                    <p class="section-subtitle">SIGNATURE MOVES & ABILITIES</p>
+                </div>
+
+                <div class="techniques-container">
+                    <div class="technique-main">
+                        <div class="technique-display">
+                            <div class="display-title">GALICK GUN</div>
+                            <div class="display-energy">
+                                <div class="energy-charge"></div>
+                                <div class="energy-beam"></div>
+                            </div>
+                            <div class="display-info">
+                                <h4>PRIMARY ENERGY ATTACK</h4>
+                                <p>A concentrated blast of purple energy. Vegeta's signature technique since his first
+                                    battle with Goku.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technique-list">
+                        <div class="technique-item active" data-technique="galick">
+                            <div class="item-icon">
+                                <i class="fas fa-burst"></i>
+                            </div>
+                            <div class="item-content">
+                                <h5>GALICK GUN</h5>
+                                <p>Concentrated energy blast</p>
+                            </div>
+                        </div>
+
+                        <div class="technique-item" data-technique="finalflash">
+                            <div class="item-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="item-content">
+                                <h5>FINAL FLASH</h5>
+                                <p>Ultimate energy discharge</p>
+                            </div>
+                        </div>
+
+                        <div class="technique-item" data-technique="bigbang">
+                            <div class="item-icon">
+                                <i class="fas fa-explosion"></i>
+                            </div>
+                            <div class="item-content">
+                                <h5>BIG BANG ATTACK</h5>
+                                <p>Sphere of destructive energy</p>
+                            </div>
+                        </div>
+
+                        <div class="technique-item" data-technique="finalexplosion">
+                            <div class="item-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="item-content">
+                                <h5>FINAL EXPLOSION</h5>
+                                <p>Self-destructive technique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">97%</div>
+                        <div class="stat-name">ACCURACY</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">S+</div>
+                        <div class="stat-name">DESTRUCTION RATING</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-name">POTENTIAL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+
+
+        <!-- Legacy Section -->
+        <section id="legacy" class="section legacy-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">05</span> WARRIOR'S LEGACY</h2>
+                    <p class="section-subtitle">IMPACT ON COMBAT EVOLUTION</p>
+                </div>
+
+                <div class="legacy-content">
+                    <div class="legacy-text">
+                        <h3>REDEFINING THE WARRIOR'S CODE</h3>
+                        <p>
+                            Vegeta's journey represents the ultimate evolution of combat philosophy.
+                            From conqueror to protector, his path demonstrates that true strength comes not from
+                            destruction,
+                            but from the will to protect what matters.
+                        </p>
+
+                        <div class="legacy-quote">
+                            <p>"Power is not about how much you can destroy. It's about the conviction to protect."</p>
+                            <div class="quote-author">- Vegeta, Age 780</div>
+                        </div>
+
+                        <div class="legacy-stats">
+                            <div class="legacy-stat">
+                                <div class="legacy-number">100+</div>
+                                <div class="legacy-label">BATTLES FOUGHT</div>
+                            </div>
+                            <div class="legacy-stat">
+                                <div class="legacy-number">7</div>
+                                <div class="legacy-label">TRANSFORMATIONS MASTERED</div>
+                            </div>
+                            <div class="legacy-stat">
+                                <div class="legacy-number">∞</div>
+                                <div class="legacy-label">POTENTIAL</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="legacy-visual">
+                        <div class="legacy-badge" style="background-image: url(assets/images/AVATAR.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                            <div class="badge-icon" ></div>
+                            <div class="badge-text" >
+                                <span style="color: black; font-weight: 600;">SAIYAN</span>
+                                <span style="color: black; font-weight: 600;">PRINCE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <div class="logo-symbol">V</div>
+                    <div class="logo-text">
+                        <span>VEGETA</span>
+                        <span>THE ULTIMATE WARRIOR</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5>SECTIONS</h5>
+                        <a href="#home">Home</a>
+                        <a href="#about">Biography</a>
+                        <a href="#power">Power Levels</a>
+                    </div>
+                    <div class="link-group">
+                        <h5>COMBAT</h5>
+                        <a href="#techniques">Techniques</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#legacy">Legacy</a>
+                    </div>
+
+                </div>
+
+                <div class="footer-newsletter">
+                    <h5>WARRIOR UPDATES</h5>
+                    <p>Receive combat analysis and power level updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="ENTER EMAIL">
+                        <button class="submit-btn">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    VEGETA © 2023 | THE PRINCE OF ALL SAIYANS
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100032431330973" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zidan.dev_44/" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>BATTLE FOOTAGE</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div class="video-player">
+                    <video id="battleVideo" controls>
+                        <source src="assets/images/videos/vegeta-trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
